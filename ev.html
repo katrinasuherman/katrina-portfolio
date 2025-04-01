@@ -5,10 +5,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>EV Trends in Washington</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 40px; color: #111; }
-    h1 { font-size: 32px; margin-bottom: 10px; }
-    .tech { font-style: italic; margin-bottom: 20px; }
-    .synopsis, .summary { margin-bottom: 20px; line-height: 1.6; }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #111;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 40px;
+      text-align: center;
+    }
+    h1 {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+    .tech {
+      font-style: italic;
+      margin-bottom: 20px;
+    }
+    .synopsis, .summary {
+      margin-bottom: 20px;
+      line-height: 1.6;
+      max-width: 800px;
+    }
     .links a {
       display: inline-block;
       margin-right: 15px;
@@ -17,28 +41,37 @@
       color: green;
       font-weight: bold;
     }
-    a.back { display: inline-block; margin-bottom: 20px; color: green; font-weight: bold; }
+    a.back {
+      display: inline-block;
+      margin-bottom: 20px;
+      color: green;
+      font-weight: bold;
+      text-decoration: none;
+    }
   </style>
 </head>
 <body>
-  <a href="projects.html" class="back">&#8592; Back to Projects</a>
-  <h1>🚗 EV Trends in Washington</h1>
-  <p class="tech">Tech Stack: Python, Pandas, NumPy, Matplotlib, Seaborn</p>
+  <div class="container">
+    <a href="projects.html" class="back">&#8592; Back to Projects</a>
+    <h1>🚗 EV Trends in Washington</h1>
+    <p class="tech">Tech Stack: Python, Pandas, NumPy, Matplotlib, Seaborn</p>
 
-  <div class="summary">
-    Understanding how electric vehicle adoption varies across regions is key to effective climate policy and infrastructure planning. This project explores EV registration data across Washington State counties to uncover regional adoption patterns and influencing factors.
-  </div>
+    <div class="summary">
+      Understanding how electric vehicle adoption varies across regions is key to effective climate policy and infrastructure planning.
+      This project explores EV registration data across Washington State counties to uncover regional adoption patterns and influencing factors.
+    </div>
 
-  <div class="synopsis">
-    The analysis is based on detailed EV registration records from Washington State’s Department of Licensing.
-    Data cleaning and wrangling were performed using Pandas, followed by exploratory data analysis to evaluate growth over time, county-level disparities, and correlations with vehicle model types and fuel categories.<br><br>
+    <div class="synopsis">
+      The analysis is based on detailed EV registration records from Washington State’s Department of Licensing.
+      Data cleaning and wrangling were performed using Pandas, followed by exploratory data analysis to evaluate growth over time, county-level disparities, and correlations with vehicle model types and fuel categories.<br><br>
 
-    Visualizations with Matplotlib and Seaborn highlight the rapid growth of battery electric vehicles (BEVs) in urban centers and the steady rise of hybrids in suburban areas.
-    The final product offers a geographic and temporal lens into how EV adoption is spreading — insights that can support cleaner transportation policy and equitable charging infrastructure deployment.
-  </div>
+      Visualizations with Matplotlib and Seaborn highlight the rapid growth of battery electric vehicles (BEVs) in urban centers and the steady rise of hybrids in suburban areas.
+      The final product offers a geographic and temporal lens into how EV adoption is spreading — insights that can support cleaner transportation policy and equitable charging infrastructure deployment.
+    </div>
 
-  <div class="links">
-    <a href="https://github.com/katrinasuherman/portfolio/blob/main/assets/codeevtrends.ipynb" target="_blank">💻 View Code</a>
+    <div class="links">
+      <a href="https://github.com/katrinasuherman/portfolio/blob/main/assets/codeevtrends.ipynb" target="_blank">💻 View Code</a>
+    </div>
   </div>
 </body>
 </html>
