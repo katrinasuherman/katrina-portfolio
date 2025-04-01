@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Healthy Recipe Analysis</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 40px; color: #111; }
+    h1 { font-size: 32px; margin-bottom: 10px; }
+    .tech { font-style: italic; margin-bottom: 20px; }
+    .synopsis, .summary { margin-bottom: 20px; line-height: 1.6; }
+    .links a {
+      display: inline-block;
+      margin-right: 15px;
+      margin-top: 10px;
+      text-decoration: none;
+      color: green;
+      font-weight: bold;
+    }
+    a.back { display: inline-block; margin-bottom: 20px; color: green; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <a href="projects.html" class="back">&#8592; Back to Projects</a>
+  <h1>🥗 Healthy Recipe Analysis</h1>
+  <p class="tech">Tech Stack: Python, Pandas, NumPy, Scikit-learn, Statsmodels, Seaborn, Plotly</p>
+
+  <div class="summary">
+    Food labels can guide or mislead. This project investigates whether recipes tagged as “healthy” truly meet common nutritional standards — a crucial concern for individuals managing health conditions or dietary restrictions.
+  </div>
+
+  <div class="synopsis">
+    Over 80,000 recipes from Food.com were analyzed to compare nutritional attributes like sugar and saturated fat content per calorie between “healthy”-tagged and untagged dishes.
+    The analysis includes hypothesis testing, custom feature engineering (e.g., sugar-to-calorie ratio), and interactive visualizations using Plotly and Seaborn.<br><br>
+
+    A Random Forest classifier was trained to predict whether a recipe deserves the “healthy” label based on its nutritional profile.
+    After tuning with GridSearchCV, the model achieved 95% precision on test data. A fairness evaluation was also conducted to assess model behavior across diverse nutritional cases.<br><br>
+
+    The project highlights the disconnect between perceived and actual healthiness — and how data science can help bridge the gap.
+  </div>
+
+  <div class="links">
+    <a href="https://katrinasuherman.github.io/HealthyRecipeAnalysis/" target="_blank">🔗 Live Project</a>
+    <a href="https://github.com/katrinasuherman/portfolio/blob/main/assets/codeishealthy.ipynb" target="_blank">💻 View Code</a>
+  </div>
+</body>
+</html>
