@@ -20,6 +20,31 @@
       padding: 40px;
       text-align: center;
     }
+
+    /* pill style like home and projects */
+    .back-nav {
+      margin-bottom: 24px;
+      font-size: 14px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .nav-pill {
+      text-decoration: none;
+      font-weight: 600;
+      color: #222;
+      padding: 6px 18px;
+      border-radius: 999px;
+      border: 1px solid transparent;
+      transition: border 0.15s ease, background 0.15s ease, color 0.15s ease;
+    }
+
+    .nav-pill:hover {
+      border-color: green;
+      background: #f0fff4;
+      color: green;
+    }
+
     h1 {
       font-size: 32px;
       margin-bottom: 10px;
@@ -33,26 +58,34 @@
       line-height: 1.6;
       max-width: 800px;
     }
-    .links a {
-      display: inline-block;
-      margin-right: 15px;
+
+    .links {
       margin-top: 10px;
-      text-decoration: none;
-      color: green;
-      font-weight: bold;
     }
-    a.back {
+
+    .pill-link {
       display: inline-block;
-      margin-bottom: 20px;
-      color: green;
-      font-weight: bold;
       text-decoration: none;
+      font-weight: 600;
+      color: green;
+      padding: 6px 18px;
+      border-radius: 999px;
+      border: 1px solid green;
+      transition: background 0.15s ease, color 0.15s ease;
+    }
+
+    .pill-link:hover {
+      background: green;
+      color: white;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <a href="./" class="back">&#8592; Back to Projects</a>
+    <div class="back-nav">
+      <a href="../" class="nav-pill">&#8592; Projects</a>
+    </div>
+
     <h1>🚗 EV Trends in Washington</h1>
     <p class="tech">Tech Stack: Python, Pandas, NumPy, Matplotlib, Seaborn</p>
 
@@ -70,7 +103,9 @@
     </div>
 
     <div class="links">
-      <a href="https://github.com/katrinasuherman/ev-project/blob/main/FinalProject_Group132-FA24.ipynb" target="_blank">💻 View Code</a>
+      <a href="https://github.com/katrinasuherman/ev-project/blob/main/FinalProject_Group132-FA24.ipynb"
+         target="_blank"
+         class="pill-link">💻 View Code</a>
     </div>
   </div>
 </body>

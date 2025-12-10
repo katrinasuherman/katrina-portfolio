@@ -48,43 +48,67 @@
       font-size: 14px;
       color: #444;
     }
-    a.back {
+
+    /* pill style to match home nav */
+    .back-nav {
+      margin-bottom: 24px;
+      font-size: 14px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .nav-pill {
       text-decoration: none;
+      font-weight: 600;
+      color: #222;
+      padding: 6px 18px;
+      border-radius: 999px;
+      border: 1px solid transparent;
+      transition: border 0.15s ease, background 0.15s ease, color 0.15s ease;
+    }
+
+    .nav-pill:hover {
+      border-color: green;
+      background: #f0fff4;
       color: green;
-      font-weight: bold;
-      display: inline-block;
-      margin-bottom: 20px;
     }
   </style>
 </head>
 <body>
-  <a href="../" class="back">&#8592; Back to Home</a>
+  <div class="back-nav">
+    <a href="../" class="nav-pill">&#8592; Home</a>
+  </div>
+
   <h1>Katrina's Projects</h1>
 
   <div class="project-grid">
-    <a href="wildfire.html" class="project-card">
+    <a href="wildfire/" class="project-card">
       <img src="../img/wildfire.jpg" alt="Wildfire" class="project-image">
       <div class="project-content">
         <div class="project-title">Wildfire Damage Prediction</div>
         <div class="project-desc">
-Can we predict wildfire damage before it happens? A machine learning model forecasts severity using property features and achieves 85% accuracy.
+          Can we predict wildfire damage before it happens? A machine learning model forecasts severity using property features and achieves 85% accuracy.
         </div>
       </div>
     </a>
 
-    <a href="healthy.html" class="project-card">
+    <a href="healthy/" class="project-card">
       <img src="../img/healthyfood.jpg" alt="Healthy Recipes" class="project-image">
       <div class="project-content">
         <div class="project-title">Healthy Recipe Analysis</div>
-        <div class="project-desc">Are “healthy” tagged recipes actually healthy? A data driven dive into 80K plus recipes reveals surprising trends in calories, fats, and sugar.</div>
+        <div class="project-desc">
+          Are “healthy” tagged recipes actually healthy? A data driven dive into 80K plus recipes reveals surprising trends in calories, fats, and sugar.
+        </div>
       </div>
     </a>
 
-    <a href="ev.html" class="project-card">
+    <a href="ev/" class="project-card">
       <img src="../img/ev.jpg" alt="EV Trends" class="project-image">
       <div class="project-content">
         <div class="project-title">EV Trends in Washington</div>
-        <div class="project-desc">How are EVs spreading across Washington? This project explores county level adoption trends using registration and vehicle type data.</div>
+        <div class="project-desc">
+          How are EVs spreading across Washington? This project explores county level adoption trends using registration and vehicle type data.
+        </div>
       </div>
     </a>
 
@@ -93,7 +117,7 @@ Can we predict wildfire damage before it happens? A machine learning model forec
       <div class="project-content">
         <div class="project-title">Bikewatching</div>
         <div class="project-desc">
-Explore interactive BlueBike traffic patterns across Boston using Mapbox, D3, and time based filtering. Circle sizes and colors reveal flow and volume.
+          Explore interactive BlueBike traffic patterns across Boston using Mapbox, D3, and time based filtering. Circle sizes and colors reveal flow and volume.
         </div>
       </div>
     </a>

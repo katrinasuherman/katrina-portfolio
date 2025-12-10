@@ -1,0 +1,142 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #111;
+}
+
+/* keep one font family for everything */
+h1,
+h2,
+nav,
+.nav-pill,
+.socials-label,
+p,
+a {
+  font-family: inherit;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+  padding: 40px;
+}
+
+nav {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 32px;
+  font-size: 14px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.nav-pill {
+  text-decoration: none;
+  font-weight: 600;
+  color: #222;
+  padding: 6px 18px;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  transition: border 0.15s ease, background 0.15s ease, color 0.15s ease;
+}
+
+.nav-pill:hover {
+  border-color: green;
+  background: #f0fff4;
+  color: green;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin: 0;
+}
+
+.profile-img {
+  width: 80px;
+  height: auto;
+  border-radius: 50%;
+}
+
+section {
+  max-width: 700px;
+  margin-bottom: 60px;
+}
+
+/* tighter spacing after about section */
+#about {
+  margin-bottom: 5px;
+}
+
+a.bold-link {
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+
+a.bold-link:hover {
+  color: green;
+}
+
+.socials i {
+  font-size: 24px;
+  margin-right: 10px;
+  color: black;
+}
+
+.socials i:hover {
+  color: green;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+#contact {
+  margin-bottom: 0;
+}
+
+.cat-img {
+  max-width: 260px;
+  border-radius: 12px;
+  margin-top: 8px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  animation: cat-wiggle 1.8s ease-in-out infinite;
+  transform-origin: center bottom;
+}
+
+.socials {
+  margin-top: 8px;
+}
+
+.socials-label {
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+  color: #555;
+}
+
+@keyframes cat-wiggle {
+  0%   { transform: rotate(0deg); }
+  20%  { transform: rotate(2deg); }
+  40%  { transform: rotate(-2deg); }
+  60%  { transform: rotate(2deg); }
+  80%  { transform: rotate(0deg); }
+  100% { transform: rotate(0deg); }
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Healthy Recipe Analysis</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #111;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 40px;
+      text-align: center;
+    }
+
+    /* pill style like home, projects, EV */
+    .back-nav {
+      margin-bottom: 24px;
+      font-size: 14px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .nav-pill {
+      text-decoration: none;
+      font-weight: 600;
+      color: #222;
+      padding: 6px 18px;
+      border-radius: 999px;
+      border: 1px solid transparent;
+      transition: border 0.15s ease, background 0.15s ease, color 0.15s ease;
+    }
+
+    .nav-pill:hover {
+      border-color: green;
+      background: #f0fff4;
+      color: green;
+    }
+
+    h1 {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+    .tech {
+      font-style: italic;
+      margin-bottom: 20px;
+    }
+    .synopsis,
+    .summary {
+      margin-bottom: 20px;
+      line-height: 1.6;
+      max-width: 800px;
+    }
+
+    .links {
+      margin-top: 10px;
+    }
+
+    .pill-link {
+      display: inline-block;
+      text-decoration: none;
+      font-weight: 600;
+      color: green;
+      padding: 6px 18px;
+      border-radius: 999px;
+      border: 1px solid green;
+      transition: background 0.15s ease, color 0.15s ease;
+      margin: 0 6px;
+    }
+
+    .pill-link:hover {
+      background: green;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="back-nav">
+      <a href="../" class="nav-pill">&#8592; Projects</a>
+    </div>
+
+    <h1>🥗 Healthy Recipe Analysis</h1>
+    <p class="tech">Tech Stack: Python, Pandas, NumPy, Scikit learn, Statsmodels, Seaborn, Plotly</p>
+
+    <div class="summary">
+      Food labels can guide or mislead. This project investigates whether recipes tagged as “healthy” truly meet common nutritional standards, which is a crucial concern for individuals managing health conditions or dietary restrictions.
+    </div>
+
+    <div class="synopsis">
+      Over 80,000 recipes from Food.com were analyzed to compare nutritional attributes like sugar and saturated fat content per calorie between “healthy” tagged and untagged dishes.
+      The analysis includes hypothesis testing, custom feature engineering such as sugar to calorie ratio, and interactive visualizations using Plotly and Seaborn.<br><br>
+
+      A Random Forest classifier was trained to predict whether a recipe deserves the “healthy” label based on its nutritional profile.
+      After tuning with GridSearchCV, the model achieved 95 percent precision on test data. A fairness evaluation was also conducted to assess model behavior across diverse nutritional cases.<br><br>
+
+      The project highlights the disconnect between perceived and actual healthiness, and shows how data science can help bridge the gap.
+    </div>
+
+    <div class="links">
+      <a href="https://katrinasuherman.github.io/HealthyRecipeAnalysis/" target="_blank" class="pill-link">🔗 Live Project</a>
+      <a href="https://github.com/katrinasuherman/HealthyRecipeAnalysis/blob/main/codeishealthy.ipynb" target="_blank" class="pill-link">💻 View Code</a>
+    </div>
+  </div>
+</body>
+</html>

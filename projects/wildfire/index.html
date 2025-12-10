@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Wildfire Damage Prediction</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #111;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 40px;
+      text-align: center;
+    }
+
+    /* pill style like home, projects, ev, healthy */
+    .back-nav {
+      margin-bottom: 24px;
+      font-size: 14px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .nav-pill {
+      text-decoration: none;
+      font-weight: 600;
+      color: #222;
+      padding: 6px 18px;
+      border-radius: 999px;
+      border: 1px solid transparent;
+      transition: border 0.15s ease, background 0.15s ease, color 0.15s ease;
+    }
+
+    .nav-pill:hover {
+      border-color: green;
+      background: #f0fff4;
+      color: green;
+    }
+
+    h1 {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+    .tech {
+      font-style: italic;
+      margin-bottom: 20px;
+    }
+    .synopsis,
+    .summary {
+      margin-bottom: 20px;
+      line-height: 1.6;
+      max-width: 800px;
+    }
+
+    .links {
+      margin-top: 10px;
+    }
+
+    .pill-link {
+      display: inline-block;
+      text-decoration: none;
+      font-weight: 600;
+      color: green;
+      padding: 6px 18px;
+      border-radius: 999px;
+      border: 1px solid green;
+      transition: background 0.15s ease, color 0.15s ease;
+      margin: 0 6px;
+    }
+
+    .pill-link:hover {
+      background: green;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="back-nav">
+      <a href="../" class="nav-pill">&#8592; Projects</a>
+    </div>
+
+    <h1>🔥 Wildfire Damage Prediction</h1>
+    <p class="tech">Tech Stack: Python, Pandas, NumPy, Scikit learn, XGBoost, LightGBM, SHAP, Streamlit</p>
+
+    <div class="summary">
+      Built to raise awareness about fire resistant design, this project uses machine learning to predict wildfire damage with 85 percent accuracy, helping homeowners and policymakers make smarter and safer building decisions.
+    </div>
+
+    <div class="synopsis">
+      A machine learning project designed to predict structural damage severity caused by wildfires using CAL FIRE inspection data.
+      This multi class classification model uses features such as roof construction, exterior siding, and property value to assess risk.
+      After evaluating multiple models, XGBoost emerged as the top performer. The tool aims to support homeowners and policymakers
+      in fire resilience planning and includes a live demo for interactive prediction.
+    </div>
+
+    <div class="links">
+      <a href="https://wildfiredamageprediction-duxhvpdfpga6vvafsrwm5n.streamlit.app/" target="_blank" class="pill-link">🔗 Live App</a>
+      <a href="https://github.com/katrinasuherman/WildfireDamagePrediction/blob/main/project_paper.pdf" target="_blank" class="pill-link">📄 Project Paper</a>
+      <a href="https://github.com/katrinasuherman/WildfireDamagePrediction/blob/main/codewildfire.ipynb" target="_blank" class="pill-link">💻 View Code</a>
+    </div>
+  </div>
+</body>
+</html>
