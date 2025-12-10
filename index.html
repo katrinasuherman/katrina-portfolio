@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
   <script>
+    // Redirect /index.html to the cleaner root url
     if (window.location.pathname.endsWith('index.html')) {
       const newPath = window.location.pathname.replace('index.html', '');
       const newUrl = window.location.origin + newPath + window.location.search + window.location.hash;
@@ -63,6 +64,10 @@
       max-width: 700px;
       margin-bottom: 60px;
     }
+    /* tighter spacing after about section */
+    #about {
+      margin-bottom: 30px;
+    }
     a.bold-link {
       font-weight: bold;
       text-decoration: none;
@@ -79,6 +84,53 @@
     .socials i:hover {
       color: green;
     }
+    h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    #contact {
+      margin-bottom: 0;
+    }
+    .cat-img {
+      max-width: 260px;
+      border-radius: 12px;
+      margin-top: 8px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .socials {
+      margin-top: 8px;
+    }
+
+    .socials-label {
+      font-size: 14px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+      color: #555;
+    }
+
+    .cat-img {
+    max-width: 260px;
+    border-radius: 12px;
+    margin-top: 8px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    animation: cat-wiggle 1.8s ease-in-out infinite;
+    transform-origin: center bottom; /* makes paws look like they rest on edge */
+  }
+
+  @keyframes cat-wiggle {
+    0%   { transform: rotate(0deg); }
+    20%  { transform: rotate(2deg); }
+    40%  { transform: rotate(-2deg); }
+    60%  { transform: rotate(2deg); }
+    80%  { transform: rotate(0deg); }
+    100% { transform: rotate(0deg); }
+  }
+
   </style>
 </head>
 <body>
@@ -94,17 +146,20 @@
     </div>
 
     <section id="about">
-      <p> I am a Data Science student at UC San Diego who enjoys working on real world problems in health and climate. My projects range from wildfire damage prediction to recipe analysis, EV trends, and surgical outcome dashboards. </p>
-      <p> Whether it is building machine learning models or designing interactive visualizations with D3.js, I am always curious about what data can reveal and how to make those insights accessible. (See my <a href="projects/" class="bold-link">projects</a> for more.) </p>
-      <p> I used to live in rainy Seattle 🌧️ and now live in sunny San Diego 🌴. I love hiking, baking, and spending time with my cat 🐱. </p>
+      <p>I am a Data Science student at UC San Diego who focuses on using data to make healthcare easier and more efficient. I am developing AI tools that reduce administrative work in clinical settings, such as drafting medical notes and organizing patient information. I also build tools that help claim adjusters review medical expenses more quickly.</p>
+      <p>My projects include wildfire damage prediction, recipe analytics, and electric vehicle trends. I enjoy turning results into clear dashboards so insights are easy to use. (See my <a href="projects/" class="bold-link">projects</a> for more.)</p>
+      <p>Outside of data, I used to live in rainy Seattle 🌧️ and now live in sunny San Diego 🌴. I like hiking, baking, and spending time with my cat!</p>
+      <img src="img/hojicha.png" alt="My cat" class="cat-img">
     </section>
 
-    <section id="contact">
-      <div class="socials">
-        <a href="https://github.com/katrinasuherman"><i class="fab fa-github"></i></a>
-        <a href="https://linkedin.com/in/katrinasuherman"><i class="fab fa-linkedin"></i></a>
-      </div>
-    </section>
+  <section id="contact">
+    <div class="socials">
+      <p class="socials-label">Socials</p>
+      <a href="mailto:katyasuherman@gmail.com"><i class="fas fa-envelope"></i></a>
+      <a href="https://github.com/katrinasuherman"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com/in/katrinasuherman"><i class="fab fa-linkedin"></i></a>
+    </div>
+  </section>
   </div>
 </body>
 </html>
